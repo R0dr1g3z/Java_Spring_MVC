@@ -4,6 +4,10 @@
 <title>Title</title>
 </head>
 <body>
+    <style>
+        body {color: ${color};}
+        body {background-color: ${backgroundColor};}
+    </style>
 <h1>Hello world !!!</h1>
 </body>
 </html>
