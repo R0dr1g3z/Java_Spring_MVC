@@ -16,10 +16,11 @@ public class RandomController {
         return r.nextInt(100 - 1) + 1;
     }
 
-    @RequestMapping("/random/{max}")
+    @RequestMapping("/random/{min}/{max}")
     @ResponseBody
-    public int randomMax(@PathVariable int max) {
+    public String randomMax(@PathVariable int max, @PathVariable int min) {
         Random r = new Random();
-        return r.nextInt(max - 1) + 1;
+        int number = r.nextInt(max - min) + min;
+        return "Drawn number: " + number;
     }
 }
