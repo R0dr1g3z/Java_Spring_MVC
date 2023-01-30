@@ -19,4 +19,9 @@ public class HelloController {
     public String helloName(@PathVariable String firstName, @PathVariable String lastName){
         return String.format("Welcome %s %s", firstName, lastName);
     }
+
+    @RequestMapping("/helloView")
+    public String helloView(){
+        return "home";
+    }
 }
