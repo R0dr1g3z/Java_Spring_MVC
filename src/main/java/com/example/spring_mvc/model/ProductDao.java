@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ProductDao {
-    List<Product> products = Arrays.asList(new Product(1, "Banana", 10), new Product(2, "Apple", 11),
-            new Product(3, "Orange", 15));
+    List<Product> products = Arrays.asList(new Product(0, "Banana", 10), new Product(1, "Apple", 11),
+            new Product(2, "Orange", 15));
 
     public List<Product> getList() {
         return products;
