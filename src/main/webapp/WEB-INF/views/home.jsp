@@ -5,8 +5,8 @@
 </head>
 <body>
     <style>
-        body {color: ${color};}
-        body {background-color: ${backgroundColor};}
+        body {color: ${color}}
+        body {background-color: ${backgroundColor}}
     </style>
 <h1>Hello world !!!</h1>
 </body>
